@@ -1,10 +1,10 @@
 define([
     './core',
     '../static/core',
-    '../static/implement-integer'
+    '../static/increment-integer'
 ], function(Element, AlmostVanilla){
 
-    Element.prototype.fadeOut = function(increment, onComplete) {
+    Element.fadeOut = function(increment, onComplete) {
         var el = this.el;
         AlmostVanilla.incrementInteger({
             start: 1,
@@ -18,7 +18,7 @@ define([
         return this;
     }
 
-    Element.prototype.fadeIn = function(increment, onComplete) {
+    Element.fadeIn = function(increment, onComplete) {
         var el = this.el;
         AlmostVanilla.incrementInteger({
             start: 0,

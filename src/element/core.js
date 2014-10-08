@@ -1,13 +1,13 @@
 define(function() {
 
-    var Element = function Element() {
+    var Element = {
     
-        this.el = {};
-        
-        this.init = function(element) {
+        el: {},
+                
+        init: function(element) {
             this.el = element || {};
             return this;
-        };
+        }
     };
     
     return Element;

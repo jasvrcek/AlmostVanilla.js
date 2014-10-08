@@ -4,8 +4,8 @@ define([
 
     var AlmostVanilla = function(element) {
         return Element.init(element);
-    }
-    
+    };
+        
     return AlmostVanilla;
 
 });
